@@ -1,8 +1,7 @@
 # TP 2 --- Student Report: Modern Python Tooling & Live API Systems
 
 **Student Name:** Rishi Anand\
-**EPITA Login:** `rishi.anand` *(verify this is the exact login required
-by EPITA)*\
+**EPITA Login:** `rishi.anand` 
 **Assigned API Group:** Group 5 --- Space & Astronomy\
 **Date:** 01/11/2026\
 **TestPyPI Live Package URL:**
