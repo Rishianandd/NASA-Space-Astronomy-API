@@ -481,6 +481,6 @@ Aggregate Result: {'successful_entries': 3, 'total_volume': 650.0, 'avg_volume':
 - [x] Project directory naming requirement flagged for confirmation.
 - [x] Part 5 limitation disclosed: the practice debugging exercise was used because the professor's original challenge file was unavailable.
 
-**GitHub repository:** [NASA Space Astronomy API](https://github.com/Rishianandd/NASA-Space-Astronomy-API)
-**Backend branch:** `feature/api-backend`\
-**Latest pushed commit:** `3ed5653`
+**GitHub Repository:** https://github.com/Rishianandd/NASA-Space-Astronomy-API
+**Main Branch:** https://github.com/Rishianandd/NASA-Space-Astronomy-API/tree/main
+**Latest pushed commit:** Check using `git log -1 --oneline`
