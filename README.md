@@ -9,6 +9,114 @@ https://test.pypi.org/project/epita-rishi-anand-space-astronomy/
 
 ------------------------------------------------------------------------
 
+## Project Overview: NASA Space & Astronomy API
+
+This repository contains a Python application that connects to NASA's Astronomy Picture of the Day (APOD) API and retrieves the daily astronomy picture and its metadata. It also includes an installable command-line interface (CLI).
+
+### Key Features
+
+- Retrieves NASA APOD data, including the title, date, media type, and image URL.
+- Uses environment variables to keep the NASA API key out of source code.
+- Provides a command-line entry point for running the application.
+- Uses `uv` to manage the Python environment and project dependencies.
+- Includes package build configuration and a lockfile for reproducible development.
+
+### Technology Stack
+
+- **Python:** 3.12+
+- **Environment and dependency management:** `uv`
+- **HTTP requests:** `requests`
+- **Environment variables:** `python-dotenv`
+- **Package build backend:** Hatchling
+- **Package validation and publishing:** Twine
+
+### Repository Structure
+
+```text
+NASA-Space-Astronomy-API/
+├── nasa/
+│   ├── __init__.py
+│   ├── cli.py
+│   └── nasa_api.py
+├── scripts/
+│   └── debug_challenge.py
+├── .env.template
+├── .gitignore
+├── .python-version
+├── main.py
+├── pyproject.toml
+├── uv.lock
+├── README.md
+└── NASA Space Report.docx
+```
+
+### Quick Start
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/Rishianandd/NASA-Space-Astronomy-API.git
+cd NASA-Space-Astronomy-API
+```
+
+**2. Install the project dependencies**
+
+```bash
+uv sync
+```
+
+**3. Create your local environment file**
+
+On Windows Command Prompt:
+
+```cmd
+copy .env.template .env
+```
+
+On macOS or Linux:
+
+```bash
+cp .env.template .env
+```
+
+Open `.env` and provide your own NASA API key using the variable name specified in `.env.template`. Do not commit `.env` or share its contents.
+
+**4. Run the application**
+
+Run the registered CLI:
+
+```bash
+uv run epita-rishi-anand-cli
+```
+
+Or run the top-level application:
+
+```bash
+uv run python main.py
+```
+
+### Useful Development Commands
+
+```bash
+uv sync
+uv tree
+uv build
+uv run twine check dist/*
+```
+
+- `uv sync` synchronizes the project environment.
+- `uv tree` displays the dependency tree.
+- `uv build` creates source and wheel distributions.
+- `uv run twine check dist/*` validates the built distributions.
+
+### Package Release
+
+Version `0.1.0` was published to TestPyPI:
+
+[epita-rishi-anand-space-astronomy on TestPyPI](https://test.pypi.org/project/epita-rishi-anand-space-astronomy/)
+
+---
+
 ## Step 0: Assigned Group Verification
 
 -   **Group Command Output:** Not captured in the terminal evidence
@@ -372,8 +480,6 @@ Aggregate Result: {'successful_entries': 3, 'total_volume': 650.0, 'avg_volume':
 - [x] Missing assigned-group verification evidence identified for follow-up.
 - [x] Project directory naming requirement flagged for confirmation.
 - [x] Part 5 limitation disclosed: the practice debugging exercise was used because the professor's original challenge file was unavailable.
-
-**Note:** The final three checkmarks mean these outstanding requirements have been identified and disclosed in this report; they do not mean the missing verification or professor confirmation has been completed.
 
 **GitHub repository:**
 https://github.com/Rishianandd/NASA-Space-Astronomy-API\
