@@ -1,7 +1,7 @@
 [project]
 name = "epita-rishi-anand-space-astronomy"
-version = "0.1.0"
-description = "EPITA Group 5 NASA Astronomy Picture of the Day API"
+version = "0.1.1"
+description = "A Python application integrating NASA's Astronomy Picture of the Day API with a command-line interface."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
