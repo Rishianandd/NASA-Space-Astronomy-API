@@ -1,0 +1,26 @@
+[project]
+name = "epita-rishi-anand-space-astronomy"
+version = "0.1.0"
+description = "EPITA Group 5 NASA Astronomy Picture of the Day API"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+epita-rishi-anand-cli = "nasa.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["nasa"]
+
+[dependency-groups]
+dev = [
+    "hatchling>=1.33.0",
+    "twine>=7.0.0",
+]

@@ -1,0 +1,2 @@
+Executable: E:\Nasa\.venv\Scripts\python.exe
+Prefix: E:\Nasa\.venv

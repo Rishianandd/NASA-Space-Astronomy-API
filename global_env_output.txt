@@ -1,0 +1,2 @@
+Executable: C:\Program Files\Python312\python.exe
+Prefix: C:\Program Files\Python312
